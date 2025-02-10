@@ -1,0 +1,21 @@
+env:
+  - name: key1
+    value: value1
+  - name: key2
+    value: value2
+
+servers:
+  name: !!int 23
+
+env1:
+  key1: value1
+  key2: value2
+
+names: &ram >-
+  chaitu
+  ram
+  geetha
+
+
+names1: *ram
+
