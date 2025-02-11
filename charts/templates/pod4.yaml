@@ -1,9 +1,7 @@
+{{- if .Values.variable }}
+---
 apiVersion: v1
-kind: ConfigMap
+kind: Namespace
 metadata:
-  name: sample-pod
-data:
-  name: {{ .Values.names }}
-  name2: {{ .Values.names1 }}
-
-
+  name: one
+{{- end }}
