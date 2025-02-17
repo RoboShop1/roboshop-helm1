@@ -17,3 +17,10 @@ spec:
       containers:
         - name: my-container
           image: nginx
+          volumeMounts:
+            - name: config-volume
+              mountPath: /tmp/config
+      volumes:
+        - name: config-volume
+          configMap:
+            name: my-config
