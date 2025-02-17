@@ -1,2 +1,2 @@
 =============================================
-{{ .Files.Get "configmap.yaml" | print "%s" }}
+{{ .Files.Get "configmap.yaml" | printf "%s" }}
