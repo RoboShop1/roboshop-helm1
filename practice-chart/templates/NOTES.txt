@@ -1,3 +1,0 @@
-=============================================
-
-{{ include "roboshop-chart/templates/configmap.yaml" . | sha256sum }}
