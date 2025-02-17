@@ -1,2 +1,2 @@
 =============================================
-{{ include $.Template.BasePath "/configmap.yaml" . }}
+{{ include "./configmap.yaml" . }}
