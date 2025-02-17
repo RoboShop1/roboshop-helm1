@@ -12,7 +12,7 @@ spec:
       labels:
         app: my-application
       annotations:
-        name: one
+        name: {{ .Files.Get "./configmap.yaml" | sha256sum }}
     spec:
       containers:
         - name: my-container

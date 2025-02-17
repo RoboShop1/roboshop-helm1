@@ -1,2 +1,2 @@
 =============================================
-{{ .Files.Get "roboshop-chart/configmap.yaml" }}
+{{ .Files.Get "configmap.yaml" | sha256sum }}
