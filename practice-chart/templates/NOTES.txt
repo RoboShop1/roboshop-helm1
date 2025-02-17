@@ -1,2 +1,2 @@
 =============================================
-{{ .Files.Get "configmap.yaml" | sha256sum }}
+{{ .Files.Get "configmap.yaml" | print "%s" }}
