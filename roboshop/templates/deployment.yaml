@@ -1,21 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app
+  name: {{ .Release.Name }}
   labels:
-    app: my-app
+    app: {{ .Release.Name  }}
 spec:
-  replicas: 3
+  replicas: {{ .Values.appName.replicas }}
   selector:
     matchLabels:
-      app: my-app
+      app: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app: my-app
+        app: {{ .Release.Name }}
     spec:
       containers:
-        - name: my-app-container
-          image: my-app:latest
+        - name: {{ .Release.Name  }}
+          image: chaitu1812/r-{{ .Release.Name  }}
+          imagePullPolicy: Always
           ports:
-            - containerPort: 80
+            - containerPort: {{ .Values.appName.containerPort }}

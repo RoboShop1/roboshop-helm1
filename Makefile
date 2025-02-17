@@ -1,13 +1,14 @@
-default:
-		echo "this is chaitu"
-prod:
-		echo "rrrrrr"
-		echo "llllll"
-apply:
+tf-apply:
+		git pull
 		terraform init
 		teraform apply -auto-approve
-destroy:
+tf-destroy:
 		terraform destroy -auto-approve
+
+
+helm:
+		helm upgrade -i
+
 
 
 

@@ -1,7 +1,19 @@
-{{- if .Values.variable }}
----
-apiVersion: v1
-kind: Namespace
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: one
-{{- end }}
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-application
+  template:
+    metadata:
+      labels:
+        app: my-application
+      annotations:
+        name: chaitu
+    spec:
+      containers:
+        - name: my-container
+          image: nginx
