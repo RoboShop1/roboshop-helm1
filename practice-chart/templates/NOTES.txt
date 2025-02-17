@@ -1,2 +1,2 @@
 =============================================
-{{ include "configmap.yaml" . }}
+{{ include "./configmap.yaml" . }}
