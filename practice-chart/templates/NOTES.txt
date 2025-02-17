@@ -1,2 +1,2 @@
 =============================================
-{{ .Files.Get "configmap.yaml" | printf "%s" }}
+{{ include (print $.Template.BasePath "/configmap.yaml") . }}
