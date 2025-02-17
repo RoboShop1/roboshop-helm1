@@ -1,2 +1,2 @@
 =============================================
-{{  Files.Get  "./configmap.yaml"  }}
+{{  .Files.Get  "./configmap.yaml"  }}
