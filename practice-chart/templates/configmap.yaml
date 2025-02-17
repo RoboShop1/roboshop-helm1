@@ -4,4 +4,4 @@ metadata:
   name: my-config
 data:
   APP_ENV: "production"
-  DATABASE_URL: "postgres://user:password@db:5432/mydb"
+  DATABASE_URL: "dataaaa"
