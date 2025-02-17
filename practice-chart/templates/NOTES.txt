@@ -1,2 +1,2 @@
 =============================================
-{{ .Files.Get "./config.yaml" }}
+{{ .Files.Get "templates/config.yaml" }}
