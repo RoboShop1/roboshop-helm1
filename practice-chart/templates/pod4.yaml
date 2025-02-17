@@ -13,6 +13,7 @@ spec:
         app: my-application
       annotations:
         name: chaitu1
+        hello: {{ sha256sum "Hello world!" }}
     spec:
       containers:
         - name: my-container
