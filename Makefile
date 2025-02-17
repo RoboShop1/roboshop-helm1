@@ -1,9 +1,7 @@
 default:
-	   echo "This is chaithanya"
-dev:
-	   echo "ram"
+		echo "this is chaitu"
 prod:
-       echo "prod"
+		echo "rrrrrr"
 
 
 
