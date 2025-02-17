@@ -1,2 +1,2 @@
 =============================================
-{{ .Files.Get "templates/config.yaml" }}
+{{ .Files.Get "roboshop-chart/configmap.yaml" }}
