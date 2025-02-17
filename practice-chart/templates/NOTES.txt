@@ -1,1 +1,2 @@
-{{ print .Template.BasePath "config.map.yaml" }}
+=============================================
+{{ print .Template.BasePath "configmap.yaml" }}
