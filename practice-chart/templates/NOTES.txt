@@ -1,2 +1,2 @@
 =============================================
-{{ $.Template.BasePath "/configmap.yaml" | sha256sum  }}
+{{ print .Template.BasePath "/configmap.yaml" | sha256sum  }}
