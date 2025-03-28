@@ -1,1 +1,9 @@
-variable: false
+appName:
+  one: one
+  two: two
+  three: three
+
+colour:
+  - one
+  - two
+  - three
