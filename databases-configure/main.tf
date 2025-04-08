@@ -1,6 +1,6 @@
 
 resource "aws_instance" "databases" {
-  ami           = "ami-0a5c3558529277641"
+  ami           = "ami-07a6f770277670015"
   instance_type = "t3.small"
   vpc_security_group_ids = [aws_security_group.db-sg.id]
   # subnet_id              = var.subnet_id
