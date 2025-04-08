@@ -28,7 +28,7 @@ resource "aws_route53_record" "www" {
   zone_id = "Z06926562JRB6HEXD0QMM"
   name    = "database.chaithanya.cloud"
   type    = "A"
-  ttl     = 300
+  ttl     = 30
   records = [aws_instance.databases.public_ip]
 }
 
